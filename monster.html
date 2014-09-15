@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Monster</title>
+</head>
+<body>
+<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+       $('svg').click(function(){
+            console.log('click svg')
+            $('.hand.left').attr('class','hand shake left')
+            $('.hand.right').attr('class','hand shake right')
+            $('.one_eye').attr('class','one_eye action-eye')
+            $('.two_eye').attr('class','two_eye action-eye')
+            $('.three_eye').attr('class','three_eye action-eye')
+       });
+    });
+</script>
+<style type="text/css">
+    .shake.left{
+        animation: shake_left 1s linear ;
+        -webkit-animation: shake_left 1s infinite ;
+    }
+    .shake.right{
+        animation: shake_right 1s linear ;
+        -webkit-animation: shake_right 1s infinite ;
+    }
+    .action-eye{
+        animation: action-eye 1s linear ;
+        -webkit-animation: action-eye 1s infinite ;
+
+    }
+    .action-tongue{
+        animation: action-tongue 1s linear ;
+        -webkit-animation: action-tongue 1s infinite ;
+    }
+    .body path{fill:#70BF5F}
+    .tongue{fill:#C2203A}
+    .hand path{fill:#70BF5F}
+    .mouth path{fill:#000}
+    .foot path{fill:#70BF5F}
+
+    .one_eye{fill:#256d00}
+    .two_eye{fill:#b24343;}
+    .three_eye{fill:#321f7a}
+
+    @-webkit-keyframes shake_right {
+        0%{
+            -webkit-transform-origin: left bottom;
+            -ms-transform-origin: left bottom;
+            transform-origin: left bottom;
+            -ms-transform: rotate(0deg); /* IE 9 */
+            -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+            transform: rotate(0deg);
+
+        }
+        50%{
+            -webkit-transform-origin: left bottom;
+            -ms-transform-origin: left bottom;
+            transform-origin: left bottom;
+            -ms-transform: rotate(-15deg); /* IE 9 */
+            -webkit-transform: rotate(-15deg); /* Chrome, Safari, Opera */
+            transform: rotate(-15deg);}
+        100%{
+            -webkit-transform-origin: left bottom;
+            -ms-transform-origin: left bottom;
+            transform-origin: left bottom;
+            -ms-transform: rotate(0deg); /* IE 9 */
+            -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+            transform: rotate(0deg);
+
+        }
+    }
+    @-webkit-keyframes shake_left {
+        0%{
+            -webkit-transform-origin: right bottom;
+            -ms-transform-origin: right bottom;
+            transform-origin: right bottom;
+            -ms-transform: rotate(0deg); /* IE 9 */
+            -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+            transform: rotate(0deg);
+
+        }
+        50%{
+            -webkit-transform-origin: right bottom;
+            -ms-transform-origin: right bottom;
+            transform-origin: right bottom;
+            -ms-transform: rotate(10deg); /* IE 9 */
+            -webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
+            transform: rotate(10deg);}
+        100%{
+            -webkit-transform-origin: right bottom;
+            -ms-transform-origin: right bottom;
+            transform-origin: right bottom;
+            -ms-transform: rotate(0deg); /* IE 9 */
+            -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+            transform: rotate(0deg);
+
+        }
+    }
+    @-webkit-keyframes action-eye {
+        50%{
+            fill:#000
+        }
+    }
+    @-webkit-keyframes action-eye {
+        50%{
+            fill:#000
+        }
+    }
+
+</style>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="595.28px" height="435.821px" viewBox="0 0 595.28 435.821" enable-background="new 0 0 595.28 435.821"
+	 xml:space="preserve">
+<g class="body">
+	<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M209.726,366.023c9.316-0.467,171.833-0.239,171.833-0.239
+		c70.83,7.346,59.55-156.092,59.55-156.092c-6.427-67.945-137.728-79.882-137.728-79.882c-123.037,0-141.4,75.292-141.4,75.292
+		S150.044,369.02,209.726,366.023z"/>
+</g>
+<g class="hand right">
+	<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M441.656,223.453c0,0,21.489,5.521,26.079-41.306
+		c0,0,10.102-8.264,14.691,11.936l11.019,23.241c0,0,30.3-38.85,43.154-29.668c0,0,15.609,0.376-4.59,35.997
+		c0,0,24.791-28.3,33.054-21.589c0,0,21.118,7.628-10.1,36.092c0,0,31.375,3.673,26.706,15.609c0,0-43.802,28.583-92.816,24.791
+		c0,0-22.035,6.427-29.381,16.528l-24.01,8.962"/>
+</g>
+<g>
+	<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M201.463,108.692c0,0-45.91-32.136-6.428-73.455
+		c0,0,41.318-24.791,63.355,24.791C258.391,60.029,274,117.875,201.463,108.692z"/>
+	<path fill="none" class="one_eye" stroke="#000000" stroke-miterlimit="10" d="M200.544,75.638c0,0-0.918-26.627,28.463-21.118
+		c0,0,25.727,11.386,5.509,33.264C234.517,87.783,206.054,94.001,200.544,75.638z"/>
+	<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="219.407" y1="109.681" x2="225.335" y2="142.666"/>
+	<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="242.268" y1="104.304" x2="246.453" y2="135.32"/>
+	<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M183.609,87.783"/>
+	<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M183.609,83.902"/>
+	<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M183.609,83.902c0,0-3.912-40.068,26.117-44.171
+		c30.029-4.103,44.172,10.958,46.418,15.627"/>
+</g>
+<g>
+	<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M333.682,60.029c2.615-35.227-34.394-40.4-34.394-40.4
+		c-32.129-3.463-40.897,40.4-40.897,40.4s18.885,34.583,37.906,28.768C296.297,88.797,331.452,90.035,333.682,60.029z"/>
+	<path fill="none" class="two_eye" stroke="#000000" stroke-miterlimit="10" d="M277.672,53.769c0,0,7.345-30.188,39.481-6.914
+		c0,0,11.022,26.854-19.74,24.794C297.413,71.65,280.77,79.114,277.672,53.769z"/>
+	<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="289.402" y1="87.783" x2="289.402" y2="129.811"/>
+	<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="310.727" y1="88.797" x2="310.727" y2="129.811"/>
+	<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M260.089,53.769c0,0-2.533-40.969,38.285-47.196
+		c0,0,31.006,0.441,41.42,32.458c0,0-0.164,19.384-8.157,30.33"/>
+</g>
+<g>
+	<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M406.218,99.511c32.479-44.622-6.428-66.109-6.428-66.109
+		c-44.99-20.2-58.913,26.627-58.913,26.627s-11.524,55.231,40.682,49.652C381.559,109.681,393.113,117.514,406.218,99.511z"/>
+	<path fill="none" class="three_eye" stroke="#000000" stroke-miterlimit="10" d="M357.554,69.36c0,0,23.872-27.191,38.563,3.316
+		c0,0,4.362,13.777-16.642,20.306C379.476,92.982,353.749,95.662,357.554,69.36z"/>
+	<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="357.171" y1="106.602" x2="357.171" y2="135.32"/>
+	<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="381.559" y1="109.681" x2="376.832" y2="142.666"/>
+	<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M340.877,60.029c0,0,16.677-26.387,49.731-20.998
+		c0,0,23.533,10.882,27.375,36.599"/>
+</g>
+<polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="277.672,194.083 268.49,228.975 296.102,236.32
+	296.102,194.083 "/>
+<polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="307.054,194.083 310.727,236.32 333.813,228.057
+	330.009,194.083 "/>
+<g class="mouth">
+	<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M368.572,286.82c62.437-36.728,50.584-69.496,50.584-69.496
+		c-11.852,0.288-39.96-12.223-39.96-12.223c-35.285-17.445-110.706-11.019-110.706-11.019c-9.182,0-95.492,29.382-95.492,29.382
+		s5.576,55.091,109.297,84.473"/>
+</g>
+<polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="381.559,210.611 372.245,247.938 393.363,242.26
+	392.807,210.611 "/>
+<polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="225.335,210.611 234.517,247.938 212.48,242.26
+	212.48,210.611 "/>
+<path class="tongue" id="p1" fill="none" stroke="#000000" stroke-miterlimit="10" d="M277.672,292.329c0,0,42.501-21.118,56.141-22.036
+	c0,0,45.776,7.346,54.958,60.6c0,0,9.183,21.119-16.526,5.51c0,0-25.541-20.199-53.171-20.199
+	C319.074,316.203,264.817,307.938,277.672,292.329z"/>
+
+<animate id="x1" xlink:href="#p1" begin="0s; x2.end"
+    attributeName="d"
+    attributeType="XML"
+    from="M277.672,292.329c0,0,42.501-21.118,56.141-22.036
+	c0,0,45.776,7.346,54.958,60.6c0,0,9.183,21.119-16.526,5.51c0,0-25.541-20.199-53.171-20.199
+	C319.074,316.203,264.817,307.938,277.672,292.329z"
+        to="M277.672,292.329c42.761-9.702,61.658-12.33,87.328-8.877
+	c0,0,11.379-1.448-10.75,27.175c0,0-14.567,15.537-26,21c0,0-4,4-31.724-10.731C296.526,320.896,256.079,297.229,277.672,292.329z"
+    dur="2s"
+    fill="freeze" />
+    <animate id="x2" xlink:href="#p1" begin="x1.end"
+    attributeName="d"
+    attributeType="XML"
+            from="M277.672,292.329c42.761-9.702,61.658-12.33,87.328-8.877
+	c0,0,11.379-1.448-10.75,27.175c0,0-14.567,15.537-26,21c0,0-4,4-31.724-10.731C296.526,320.896,256.079,297.229,277.672,292.329z"
+    to="M277.672,292.329c0,0,42.501-21.118,56.141-22.036
+	c0,0,45.776,7.346,54.958,60.6c0,0,9.183,21.119-16.526,5.51c0,0-25.541-20.199-53.171-20.199
+	C319.074,316.203,264.817,307.938,277.672,292.329z"
+
+    dur="2s"
+    fill="freeze" />
+
+
+<g class="hand left">
+	<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M161.006,232.647c0,0-28.407-1.837-31.162-44.991
+		c0,0-6.427-7.346-9.181,6.427c0,0-12.855,25.365-16.527,23.241c-3.673-2.123-3.673-2.123-3.673-2.123s-27.546-30.299-42.237-21.118
+		c0,0-5.509,13.772,7.346,30.3c0,0-34.891-32.137-38.564-9.182c0,0,2.754,16.807,17.446,32.736c0,0-22.037-7.944-27.546,11.337
+		c0,0,21.119,18.364,55.091,22.037c0,0,53.255,0.918,63.354,15.609l32.468,16.959"/>
+
+</g>
+<g class="foot">
+  <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M212.48,366.065v28.183c0,0-16.534,24.933-11.94,29.381
+	c0,0,15.613,4.45,45.913,4.45c0,0,30.367-0.776,35.842-3.531c0,0,5.543-44.991,0-54.172"/>
+    <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M212.48,394.248c0,0,25.197-0.918,31.88,7.346"/>
+</g>
+
+<g class="foot">
+    <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M327.254,370.376c0,0-12.34,52.052-4.333,57.703
+	c0,0,62.929-1.694,73.571-3.531c0,0,21.662,3.673,3.298-22.954l-6.427-7.376v-28.152"/>
+    <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M393.363,394.218c0,0-19.849-4.589-29.665,3.689"/>
+</g>
+
+<g>
+	<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M382.445,414.267c0,0,11.897-2.442,10.979,5.68
+		C393.424,419.946,387.992,428.788,382.445,414.267z"/>
+	<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M402.348,413.923c0,0,4.345,4.814,0,8.688
+		C402.348,422.611,391.071,423.508,402.348,413.923z"/>
+</g>
+<g>
+	<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M201.564,414.267c0,0,11.897-2.442,10.979,5.68
+		C212.543,419.946,207.111,428.788,201.564,414.267z"/>
+	<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M221.466,413.923c0,0,4.346,4.814,0,8.688
+		C221.466,422.611,210.19,423.508,221.466,413.923z"/>
+</g>
+</svg>
+
+</body>
+</html>
